@@ -7,3 +7,8 @@ docker-compose down
 docker-compose down -v --remove-orphans --> Isso removerá os volumes associados ao cluster Kafka e redes órfãs.
 
 docker-compose build --no-cache --> Isso força a recriação das imagens, garantindo que nenhuma configuração antiga seja reaproveitada
+
+
+Para executar o script python via poetry:
+
+poetry run python script.py
