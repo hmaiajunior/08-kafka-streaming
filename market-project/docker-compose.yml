@@ -257,6 +257,15 @@ services:
   #     options:
   #       max-size: "1m"
 
+  dashboard:
+    build: ./dashboard/
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    networks:
+      - bd
+
 networks:
   kafka:
     name: kafka
